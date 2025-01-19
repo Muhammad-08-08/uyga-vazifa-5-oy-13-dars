@@ -1,6 +1,6 @@
 import uzum_logo_icon from "../../assets/uzum_logo_icon.svg";
 import katalog_icon from "../../assets/katalog_icon.svg";
-import x_solid from "../../assets/x-solid.svg";
+import x_solid from "../../assets/x-button.svg";
 import uzum_qidiruv_icon from "../../assets/uzum_qidiruv_icon.svg";
 import user_icon from "../../assets/user_icon.svg";
 import likes_icon from "../../assets/likes_icon.svg";
