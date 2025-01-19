@@ -7,9 +7,11 @@ import likes_icon from "../../assets/likes_icon.svg";
 import savat_icon from "../../assets/savat_icon.svg";
 import Katalog from "../katalog";
 import { useState } from "react";
+import Input_modal from "../input_modal";
 
 function Navbar() {
   const [katalog, setKatalog] = useState(false);
+  const [input, setInput] = useState(false);
   return (
     <div>
       <div className="w-[1519px] px-40 py-6 bg-white mx-auto flex items-center justify-between">
@@ -31,6 +33,9 @@ function Navbar() {
         </div>
         <div className="flex items-center relative">
           <input
+            onClick={() => {
+              setInput(input === false ? true : false);
+            }}
             className="w-[450px] border px-2 py-2 rounded-lg"
             type="text"
             placeholder="Mahsulotlar va turkumlar izlash"
@@ -55,6 +60,7 @@ function Navbar() {
         </div>
       </div>
       {katalog && <Katalog setKatalog={setKatalog} katalog={katalog} />}
+      {input && <Input_modal />}
     </div>
   );
 }

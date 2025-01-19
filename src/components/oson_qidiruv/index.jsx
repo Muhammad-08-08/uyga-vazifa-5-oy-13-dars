@@ -1,12 +1,6 @@
 import muddatli_tolov_img from "../../assets/muddatli_tolov_img.svg";
-import { useState } from "react";
 
 function OsonQidiruv() {
-  const [component, setComponent] = useState("");
-
-  if (component === "elekronika") {
-    return <Elektronika />;
-  }
   return (
     <div className="w-[1519px] px-40 py-5 bg-white mx-auto flex items-center justify-between">
       <div className="flex gap-1 items-center">
@@ -16,16 +10,38 @@ function OsonQidiruv() {
         </h4>
       </div>
       <div className="flex gap-7">
-        <p onClick={()=>{
-          setComponent("elekronika")
-        }} className="text-[14px] text-[#595B66]">Elektronika</p>
-        <p className="text-[14px] text-[#595B66]">Maishiy texnika</p>
-        <p className="text-[14px] text-[#595B66]">Kiyim</p>
-        <p className="text-[14px] text-[#595B66]">Poyabzallar</p>
-        <p className="text-[14px] text-[#595B66]">Aksessuarlar</p>
-        <p className="text-[14px] text-[#595B66]">Goʻzallik va parvarish</p>
-        <p className="text-[14px] text-[#595B66]">Salomatlik</p>
-        <p className="text-[14px] text-[#595B66]">Qurilish va taʼmirlash</p>
+        <p className="relative group text-[14px] text-[#595B66] hover:text-black cursor-pointer">
+          Elektronika
+          <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+        </p>
+        <p className="relative group text-[14px] text-[#595B66] hover:text-black cursor-pointer">
+          Maishiy texnika
+          <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+        </p>
+        <p className="relative group text-[14px] text-[#595B66] hover:text-black cursor-pointer">
+          Kiyim
+          <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+        </p>
+        <p className="relative group text-[14px] text-[#595B66] hover:text-black cursor-pointer">
+          Poyabzallar
+          <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+        </p>
+        <p className="relative group text-[14px] text-[#595B66] hover:text-black cursor-pointer">
+          Aksessuarlar
+          <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+        </p>
+        <p className="relative group text-[14px] text-[#595B66] hover:text-black cursor-pointer">
+          Goʻzallik va parvarish
+          <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+        </p>
+        <p className="relative group text-[14px] text-[#595B66] hover:text-black cursor-pointer">
+          Salomatlik
+          <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+        </p>
+        <p className="relative group text-[14px] text-[#595B66] hover:text-black cursor-pointer">
+          Qurilish va taʼmirlash
+          <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
+        </p>
       </div>
       <select className="w-20">
         <option value="yana">Yana</option>

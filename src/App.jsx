@@ -3,6 +3,7 @@ import Header from "./components/header";
 import Navbar from "./components/navbar";
 import OsonQidiruv from "./components/oson_qidiruv";
 import Carousel from "./components/carousel";
+import Kardlar from "./components/kardlar";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <OsonQidiruv />
       <Carousel />
+      <Kardlar />
     </div>
   );
 }

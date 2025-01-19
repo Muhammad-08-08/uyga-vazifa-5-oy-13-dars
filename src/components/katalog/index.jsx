@@ -1,5 +1,3 @@
-import React from "react";
-
 function Katalog({ katalog, setKatalog }) {
   return (
     <div
@@ -8,8 +6,8 @@ function Katalog({ katalog, setKatalog }) {
       }}
       className="fixed pl-7 bottom-[-23px] bg-white right-0 w-full h-5/6 z-10"
     >
-      <div>
-        <div className="mt-16 border w-max px-10 pl-20 py-6">
+      <div className="flex ">
+        <div className=" border w-max px-11 pr-20 py-6">
           <div className="flex items-center gap-2">
             <img
               width={"35px"}
