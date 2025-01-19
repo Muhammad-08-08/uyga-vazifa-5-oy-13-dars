@@ -28,7 +28,7 @@ function Navbar() {
               src={katalog === false ? katalog_icon : x_solid}
               alt=""
             />
-            katalog
+            <p className="text-[#7000FF] font-semibold">katalog</p>
           </button>
         </div>
         <div className="flex items-center relative">
@@ -60,7 +60,7 @@ function Navbar() {
         </div>
       </div>
       {katalog && <Katalog setKatalog={setKatalog} katalog={katalog} />}
-      {input && <Input_modal />}
+      {input && <Input_modal setInput={setInput} />}
     </div>
   );
 }
