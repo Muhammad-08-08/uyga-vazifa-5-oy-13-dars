@@ -3,7 +3,6 @@ import Cards from "../Cards";
 
 function Kardlar() {
   const [data, setData] = useState([]);
-  const [page, setPage] = useState();
   useEffect(() => {
     fetch(" https://api.escuelajs.co/api/v1/products").then((response) => {
       response.json().then((data) => {
@@ -21,8 +20,6 @@ function Kardlar() {
             price={item.price}
             title={item.title}
             creationAt={item.creationAt}
-            setPage={setPage}
-            page={page}
           />
         );
       })}
