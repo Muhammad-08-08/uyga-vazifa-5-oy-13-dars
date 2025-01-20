@@ -77,6 +77,7 @@ function Carousel() {
         {imgs.map((item, index) => {
           return (
             <img
+            key={index}
               onClick={() => {
                 setCarousel(index);
               }}
