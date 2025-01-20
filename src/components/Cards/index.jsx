@@ -3,6 +3,7 @@ import likes_svg from "../../assets/likes.svg";
 import rating_icon from "../../assets/rating_icon.svg";
 import qizil_likes from "../../assets/heart-solid.svg";
 import bag_svg from "../../assets/bag_svg.svg";
+import icons8_delete from "../../assets/icons8-delete-24.png";
 
 function Cards(props) {
   const [color, setColor] = useState(likes_svg);
@@ -20,6 +21,7 @@ function Cards(props) {
           alt=""
         />
         <img src={props.rasm} alt="card imgs" />
+
         <p className="px-3  text-[13px] text-white  bg-[#3B007D] absolute left-2 bottom-2 rounded-lg">
           {props.bolishi_mumkin}
         </p>
@@ -45,7 +47,15 @@ function Cards(props) {
               {parseFloat(props.chegirma_narx).toFixed(3)} so'm
             </h4>
           </div>
-          <img className="cursor-pointer" src={bag_svg} alt="" />
+          <div className="flex gap-2 items-center">
+            <img
+              onClick={() => props.onDelete(props.id)}
+              className="cursor-pointer h-[22px]"
+              src={icons8_delete}
+              alt="O'chirish"
+            />
+            <img className="cursor-pointer" src={bag_svg} alt="" />
+          </div>
         </div>
       </div>
     </div>
