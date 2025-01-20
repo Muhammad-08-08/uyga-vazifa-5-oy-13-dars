@@ -42,7 +42,9 @@ function Input_modal({ setInput }) {
           className="w-[600px] h-[100vh] scroll-m-0 bg-white flex justify-around flex-wrap p-4 rounded-lg overflow-auto"
           onClick={(e) => e.stopPropagation()}
         >
-          {loading && <p>Yuklanmoqda...</p>}
+          {loading && (
+            <div className="w-16 h-16 border-4 border-slate-100 border-t-slate-300 border-t-2 animate-spin rounded-full "></div>
+          )}
           {error && <p className="text-red-500">{error}</p>}
           {!loading &&
             !error &&
@@ -58,7 +60,6 @@ function Input_modal({ setInput }) {
               />
             ))}
         </div>
-        
       </div>
     </div>
   );

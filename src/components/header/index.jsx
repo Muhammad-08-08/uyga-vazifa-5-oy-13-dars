@@ -32,7 +32,7 @@ function Header() {
             <p>O'zbekcha</p>
           </div>
           <div>
-            <Ruscha_til drop={drop} />
+            <Ruscha_til drop={drop} setDrop={setDrop} />
           </div>
         </div>
       </div>
@@ -40,15 +40,25 @@ function Header() {
   );
 }
 
-function Ruscha_til({ drop }) {
+function Ruscha_til({ drop, setDrop }) {
   return (
-    <div
-      className={`${
-        drop === false ? "hidden" : "flex"
-      } items-center gap-2 absolute cursor-pointer`}
-    >
-      <img className="w-5 h-5" src={russia_bayroq_icon} alt="" />
-      <p>Ruscha</p>
+    <div>
+      <div
+        onClick={() => {
+          setDrop(false);
+        }}
+        className={`w-full h-[100vh] bg-gray-400 fixed top-0 left-0 opacity-0 ${
+          drop === false ? "hidden" : "block"
+        }`}
+      ></div>
+      <div
+        className={`${
+          drop === false ? "hidden" : "flex"
+        } items-center gap-2 absolute cursor-pointer`}
+      >
+        <img className="w-5 h-5" src={russia_bayroq_icon} alt="" />
+        <p>Ruscha</p>
+      </div>
     </div>
   );
 }
