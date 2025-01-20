@@ -1,14 +1,12 @@
-import React from "react";
-
 function Product_page({ img, price, title }) {
   return (
-    <div>
+    <div className="flex flex-col gap-4 w-[250px] mt-10 h-[370px] border">
       <div>
-        <img src={img} alt="" />
+        <img className="w-[250px]" src={img} alt="img" />
       </div>
-      <div>
-        <h3>{price}</h3>
-        <h3>{title}</h3>
+      <div className="pl-5">
+        <p className="text-[20px] font-medium">${price}</p>
+        <h3 className="font-bold">{title}</h3>
       </div>
     </div>
   );

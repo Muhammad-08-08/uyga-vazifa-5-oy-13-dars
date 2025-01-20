@@ -2,8 +2,7 @@ import React from "react";
 import Header from "./components/header";
 import Navbar from "./components/navbar";
 import OsonQidiruv from "./components/oson_qidiruv";
-import Carousel from "./components/carousel";
-import Kardlar from "./components/kardlar";
+import Home from "./components/home";
 
 function App() {
   return (
@@ -11,8 +10,7 @@ function App() {
       <Header />
       <Navbar />
       <OsonQidiruv />
-      <Carousel />
-      <Kardlar />
+      <Home />
     </div>
   );
 }
