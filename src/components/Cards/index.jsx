@@ -1,6 +1,11 @@
-function Cards({ img, price, title, creationAt }) {
+function Cards({ img, price, title, creationAt, setPage, page }) {
   return (
-    <div className="flex flex-col gap-4 w-[250px] mt-10 h-[370px] border">
+    <div
+      onClick={() => {
+        setPage(page);
+      }}
+      className="flex flex-col gap-4 w-[250px] mt-10 h-[370px] border"
+    >
       <div>
         <img className="w-[250px]" src={img} alt="img" />
       </div>
