@@ -2,7 +2,7 @@ import muddatli_tolov_img from "../../assets/muddatli_tolov_img.svg";
 
 function OsonQidiruv() {
   return (
-    <div className="w-[1519px] px-40 py-5 bg-white mx-auto flex items-center justify-between">
+    <div className="w-[1519px] px-40 py-5 bg-white mx-auto absolute -z-10 flex items-center justify-between">
       <div className="flex gap-1 items-center">
         <img src={muddatli_tolov_img} alt="" />
         <h4 className="text-[12.8px] tetx-[#1F2026] font-bold">

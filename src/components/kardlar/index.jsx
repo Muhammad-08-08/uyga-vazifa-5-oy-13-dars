@@ -16,10 +16,12 @@ function Kardlar() {
         return (
           <Cards
             key={index}
-            img={item.images}
-            price={item.price}
-            title={item.title}
-            creationAt={item.creationAt}
+            rasm={item.images}
+            malumot={item.description}
+            rating={item.rating}
+            oyiga_tolov={item.price / 12}
+            eski_narx={item.price}
+            chegirma_narx={item.price * 0.80}
           />
         );
       })}
