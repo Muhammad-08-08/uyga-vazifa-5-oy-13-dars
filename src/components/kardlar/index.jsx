@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Cards from "../Cards";
+import { Link } from "react-router";
 
 function Kardlar() {
   const [data, setData] = useState([]);
@@ -33,17 +34,18 @@ function Kardlar() {
       )}
       {data.map((item) => {
         return (
-          <Cards
-            key={item.id}
-            id={item.id}
-            rasm={item.images}
-            malumot={item.description}
-            rating={item.rating}
-            oyiga_tolov={item.price / 12}
-            eski_narx={item.price}
-            chegirma_narx={item.price * 0.8}
-            onDelete={deleteCard}
-          />
+          <Link key={item.id} to={`/product/${item.id}`}>
+            <Cards
+              id={item.id}
+              rasm={item.images}
+              malumot={item.description}
+              rating={item.rating}
+              oyiga_tolov={item.price / 12}
+              eski_narx={item.price}
+              chegirma_narx={item.price * 0.8}
+              onDelete={deleteCard}
+            />
+          </Link>
         );
       })}
     </div>

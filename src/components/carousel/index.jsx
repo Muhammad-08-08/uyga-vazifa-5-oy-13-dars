@@ -26,15 +26,11 @@ function Carousel() {
 
   useEffect(() => {
     const carousel_vaqti = setInterval(() => {
-      if (carousel < imgs.length - 1) {
-        setCarousel(carousel + 1);
-      } else if (imgs.length === 4) {
-        setCarousel(carousel - 3);
-      }
+      setCarousel((prev) => (prev < imgs.length - 1 ? prev + 1 : 0));
     }, 3000);
 
     return () => clearInterval(carousel_vaqti);
-  }, [carousel]);
+  }, [imgs.length]);
 
   const chap = () => {
     if (carousel > 0) {
@@ -77,7 +73,7 @@ function Carousel() {
         {imgs.map((item, index) => {
           return (
             <img
-            key={index}
+              key={index}
               onClick={() => {
                 setCarousel(index);
               }}

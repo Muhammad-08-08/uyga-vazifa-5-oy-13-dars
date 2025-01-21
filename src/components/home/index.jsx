@@ -1,9 +1,9 @@
-import Carousel from "../carousel";
-import Kardlar from "../kardlar";
+import Kardlar from "../kardlar/index";
+import Carousel from "../carousel/index";
 
 function Home() {
   return (
-    <div className="-z-20 absolute">
+    <div>
       <Carousel />
       <Kardlar />
     </div>
