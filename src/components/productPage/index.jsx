@@ -15,9 +15,9 @@ function ProductDetail() {
   return (
     <div>
       {product ? (
-        <div>
+        <div className="w-[1519px] px-40 py-5 bg-white mx-auto flex items-center justify-between">
           <img src={product.images[0]} alt={product.title} width="300" />
-          <div>
+          <div className="">
             <h1>{product.title}</h1>
             <p>{product.description}</p>
             <p>Narxi: {product.price}</p>
