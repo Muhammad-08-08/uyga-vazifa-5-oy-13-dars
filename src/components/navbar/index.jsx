@@ -8,6 +8,7 @@ import savat_icon from "../../assets/savat_icon.svg";
 import Katalog from "../katalog";
 import { useState } from "react";
 import Input_modal from "../input_modal";
+import { Link } from "react-router";
 
 function Navbar() {
   const [katalog, setKatalog] = useState(false);
@@ -16,7 +17,9 @@ function Navbar() {
     <div>
       <div className="w-[1519px] px-40 py-6 bg-white mx-auto flex items-center justify-between">
         <div className="flex">
-          <img src={uzum_logo_icon} alt="" />
+          <Link to={"/"}>
+            <img src={uzum_logo_icon} alt="" />
+          </Link>
           <button
             onClick={() => {
               setKatalog(katalog === false ? true : false);
