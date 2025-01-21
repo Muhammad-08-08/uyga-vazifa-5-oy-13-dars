@@ -4,6 +4,7 @@ import Navbar from "./components/navbar/index";
 import OsonQidiruv from "./components/oson_qidiruv/index";
 import ProductDetail from "./components/productPage/index";
 import Home from "./components/home";
+import SavolJavoblar from "./components/savol_javoblar";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/product/:id" element={<ProductDetail />} />
+        <Route path="/savolJavoblar" element={<SavolJavoblar />} />
       </Routes>
     </div>
   );

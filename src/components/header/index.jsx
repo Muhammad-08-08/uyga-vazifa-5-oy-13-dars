@@ -2,6 +2,7 @@ import { useState } from "react";
 import lokation_icon from "../../assets/location_icon.svg";
 import uzbek_bayroq_icon from "../../assets/uzbek_bayroq_icon.svg";
 import russia_bayroq_icon from "../../assets/russia.png";
+import { Link } from "react-router";
 
 function Header() {
   const [drop, setDrop] = useState(false);
@@ -19,7 +20,9 @@ function Header() {
         Buyurtmangizni 1 kunda bepul yetkazib beramiz!
       </p>
       <div className="flex items-center gap-4">
-        <p>Savol-javoblar</p>
+        <Link to={"/savolJavoblar"}>
+          <p>Savol-javoblar</p>
+        </Link>
         <p>Buyurtmalarim</p>
         <div>
           <div
