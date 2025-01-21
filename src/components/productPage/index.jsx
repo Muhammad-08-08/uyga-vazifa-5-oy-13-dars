@@ -20,11 +20,13 @@ function ProductDetail() {
           <div className="">
             <h1>{product.title}</h1>
             <p>{product.description}</p>
-            <p>Narxi: {product.price}</p>
+            <p>Narxi: ${product.price}</p>
           </div>
         </div>
       ) : (
-        <p>Yuklanmoqda...</p>
+        <p className="w-[1519px] px-40 py-5 bg-white mx-auto flex items-center text-xl justify-center">
+          Yuklanmoqda...
+        </p>
       )}
     </div>
   );

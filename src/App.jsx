@@ -5,6 +5,7 @@ import OsonQidiruv from "./components/oson_qidiruv/index";
 import ProductDetail from "./components/productPage/index";
 import Home from "./components/home";
 import SavolJavoblar from "./components/savol_javoblar";
+import Kategories from "./components/kategories";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/savolJavoblar" element={<SavolJavoblar />} />
+        <Route path="/kategories" element={<Kategories />} />
       </Routes>
     </div>
   );
