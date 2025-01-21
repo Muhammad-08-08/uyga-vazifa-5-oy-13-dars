@@ -48,13 +48,17 @@ function Cards(props) {
             </h4>
           </div>
           <div className="flex gap-2 items-center">
-            <img
-              onClick={() => props.onDelete(props.id)}
-              className="cursor-pointer h-[22px]"
-              src={icons8_delete}
-              alt="O'chirish"
-            />
-            <img className="cursor-pointer" src={bag_svg} alt="" />
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                props.onDelete(props.id);
+              }}
+            >
+              <img src={icons8_delete} alt="O'chirish" />
+            </button>
+            <button>
+              <img className="cursor-pointer" src={bag_svg} alt="" />
+            </button>
           </div>
         </div>
       </div>
