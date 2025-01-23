@@ -52,6 +52,7 @@ function Navbar() {
             <img src={user_icon} alt="" />
             <p>Kirish</p>
           </div>
+
           <div className="flex items-center gap-2">
             <img src={likes_icon} alt="" />
             <p>Saralangan</p>

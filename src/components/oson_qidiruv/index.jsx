@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import muddatli_tolov_img from "../../assets/muddatli_tolov_img.svg";
 
 function OsonQidiruv() {
@@ -43,12 +42,6 @@ function OsonQidiruv() {
           Qurilish va taʼmirlash
           <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
         </p>
-        <Link to={"/kategories"}>
-          <p className="relative group text-[14px] text-[#595B66] hover:text-black cursor-pointer">
-            kategories
-            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-black transition-all duration-300 ease-in-out group-hover:w-full"></span>
-          </p>
-        </Link>
       </div>
       <select className="w-20">
         <option value="yana">Yana</option>

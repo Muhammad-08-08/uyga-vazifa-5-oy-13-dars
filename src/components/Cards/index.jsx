@@ -15,7 +15,10 @@ function Cards(props) {
     <div className="w-[232px] h-[472px] mx-auto">
       <div className="relative">
         <img
-          onClick={like_bosish}
+          onClick={(e) => {
+            e.preventDefault();
+            like_bosish();
+          }}
           className="absolute w-6 right-2 top-2 cursor-pointer"
           src={color}
           alt=""
